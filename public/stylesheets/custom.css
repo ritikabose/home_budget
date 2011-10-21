@@ -1,0 +1,111 @@
+.container{
+	width: 1000px;
+}
+
+body{
+	background: #ADFF2F;
+}
+header{
+	padding-top: 20px;
+
+}
+
+header img{
+	padding: 1em;
+	background: #FFD700;
+}
+
+
+section{
+	margin-top: 1em;
+	font-size: 150%;
+	padding:20px;
+	background: #fff;
+}
+
+section h1{
+	width : 250px;
+	font-size: 200%;
+	font-family: Georgia;
+	font-style: italic;
+	color: #0000FF;
+	background:#ADFF2F;
+	border-width:5px;
+	border-style:solid;
+	border-color: #ffd700;
+	text-align : center;
+}
+
+/*Links*/
+
+a:link{
+	color: #00008B;
+	text-decoration :none;
+}
+
+a:hover{
+	color: #00FFFF;
+	text-decoration: underline;
+	
+}
+
+a:visited{
+	color: #FF1493;
+	
+}
+
+/*Navigation*/
+
+nav{
+	float: right;
+	
+}
+nav{
+	background-color: white;
+	padding:0 0.7em;
+	white-space: nowrap;
+}
+
+nav ul{
+	margin: 0;
+	padding :0;
+}
+
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+	padding:0.2em 0;
+}
+
+/*Sign up botton */
+a.signup_button{
+	margin-left: auto;
+	margin-right : auto;
+	display:block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background: #006400 ;
+	font-size: 150%;
+    font-weight:bold;
+    padding:20px;
+}
+
+/*Round corners*/
+.round{
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	#border radius: 30px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 10px;
+	width:1000px;
+	margin-right: auto;
+	font-size: 120%;
+}
+
+footer nav{
+	float:none;
+}
