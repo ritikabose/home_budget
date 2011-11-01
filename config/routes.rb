@@ -1,10 +1,11 @@
 HomeBudget::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/contact"
-  
-  get "pages/about"
-
+	resources :users
+	get "users/new"
+	match '/signup', :to => 'users#new'
+  match '/contact', :to => 'paes#contact'
+  match '/about', :to => 'paes#about'
+  match '/help', :to => 'paes#help'
+  root :to => 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
