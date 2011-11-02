@@ -1187,3 +1187,525 @@ Rendered layouts/_header.html.erb (15.6ms)
 Rendered layouts/_footer.html.erb (0.0ms)
 Rendered users/new.html.erb within layouts/application (93.8ms)
 Completed 200 OK in 188ms (Views: 187.5ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (31.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20111021223848)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111021223848')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (109.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20111021223848)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (15.6ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111021223848'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20111021223848)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111021223848')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ('ritika bose', 'rbose@yahoo.com', '2011-10-27 20:51:47.193119', '2011-10-27 20:51:47.193119')
+  [1m[36mAREL (15.6ms)[0m  [1mDELETE FROM "users" WHERE ("users"."id" = 1)[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ('ritika bose', 'rbose@yahoo.com', '2011-10-27 21:29:57.864994', '2011-10-27 21:29:57.864994')[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ('vivek bose', 'vbose@yahoo.com', '2011-10-27 21:32:11.146244', '2011-10-27 21:32:11.146244')[0m
+  [1m[36mSQL (93.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (15.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20111021223848)
+Migrating to AddEmailUniquenessIndex (20111031210215)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (15.6ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  CREATE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111031210215')[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('rmajumdar@yahoo.com')) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('rmajumdar@yahoo.com')) LIMIT 1
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('rmajumdar@yahoo.com')) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1[0m
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddEmailUniquenessIndex (20111031210215)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (5031.2ms)[0m  [1mDROP INDEX "index_users_on_email"[0m
+SQLite3::BusyException: database is locked: DROP INDEX "index_users_on_email"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddEmailUniquenessIndex (20111031210215)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (0.0ms)[0m  [1mDROP INDEX "index_users_on_email"[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111031210215'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (15.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20111021223848)
+Migrating to AddEmailUniquenessIndex (20111031210215)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  CREATE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111031210215')[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ('ritika', 'r3majumdar@yahoo.com', '2011-11-01 15:27:37.148383', '2011-11-01 15:27:37.148383')[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2011-11-01 11:38:55 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 11:39:20 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (15.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered users/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 922ms (Views: 109.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 11:40:49 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 203ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-11-01 11:43:53 -0400
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2011-11-01 11:44:03 -0400
+
+ActionController::RoutingError (No route matches "/user"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 11:44:14 -0400
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-01 11:46:39 -0400
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-01 12:05:06 -0400
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 12:05:13 -0400
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-11-01 14:38:01 -0400
+
+ActionController::RoutingError (No route matches "/home"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 14:38:07 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 219ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 14:39:41 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (31.2ms)
+Rendered layouts/_header.html.erb (656.2ms)
+Rendered pages/home.html.erb within layouts/application (765.6ms)
+Completed   in 875ms
+
+ActionView::Template::Error (undefined local variable or method `help_path' for #<#<Class:0x195f678>:0x1957560>):
+    5:            <nav class = "round">
+    6:            	<ul>
+    7:            		<li><%= link_to "Home", root_path%></li>
+    8:  		        <li><%= link_to "Help", help_path%></li>
+    9:  		        <li><%= link_to "Signin", '#'%></li>
+    10:            	</ul>
+    11:            	</nav>	
+  app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__741210715_13089948__466232470'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__452505083_13262076_913897923'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (140.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 14:49:25 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 234ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-01 14:49:35 -0400
+
+ActionController::RoutingError (No route matches "/new"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-11-01 14:49:45 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (171.9ms)
+Completed 200 OK in 312ms (Views: 312.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 14:49:52 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Rendered layouts/_footer.html.erb (15.6ms)
+Rendered users/show.html.erb within layouts/application (281.2ms)
+Completed 200 OK in 594ms (Views: 484.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 16:12:41 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered users/show.html.erb within layouts/application (0.0ms)
+Completed   in 266ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= @user.name %> ,<%= @user.email %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb___216788070_12872052_913897923'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (156.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 16:14:36 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 16:15:44 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (46.9ms)
+Completed   in 203ms
+
+ActionView::Template::Error (undefined local variable or method `title' for #<#<Class:0x19a4558>:0x19a1438>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= title %></title>
+    5:     <%= csrf_meta_tag %>
+    6:     <%= render 'layouts/stylesheets' %>
+    7:   </head>
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__452505083_13432848_913897923'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (109.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 16:16:54 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 234ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 16:17:03 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered users/show.html.erb within layouts/application (0.0ms)
+Completed   in 109ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= @user.name %> ,<%= @user.email %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb___216788070_12872016_913897923'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (93.8ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-01 16:17:26 -0400
+
+ActionController::RoutingError (No route matches "/new"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-11-01 16:17:38 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 266ms (Views: 265.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 22:39:23 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:39:45 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:40:38 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-11-01 22:42:29 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:42:34 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:43:29 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:44:54 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:49:10 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-01 22:51:13 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
