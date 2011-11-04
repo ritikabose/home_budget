@@ -2,9 +2,9 @@ HomeBudget::Application.routes.draw do
 	resources :users
 	get "users/new"
 	match '/signup', :to => 'users#new'
-  match '/contact', :to => 'paes#contact'
-  match '/about', :to => 'paes#about'
-  match '/help', :to => 'paes#help'
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about'
+  match '/help', :to => 'pages#help'
   root :to => 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.

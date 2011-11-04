@@ -1982,3 +1982,269 @@ Rendered layouts/_header.html.erb (0.0ms)
 Rendered layouts/_footer.html.erb (0.0ms)
 Rendered users/show.html.erb within layouts/application (140.6ms)
 Completed 200 OK in 1000ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (15.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (15.6ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (15.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) 
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (15.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (31.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (15.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (15.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (203.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111102210414')
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111102032640')[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111102033517')
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111102185208')[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+
+
+Started GET "/users/signup" for 127.0.0.1 at 2011-11-04 11:06:43 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 0) LIMIT 1
+Completed   in 1094ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=signup):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 11:07:50 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (609.4ms)
+Completed 200 OK in 766ms (Views: 718.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 11:08:09 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 391ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2011-11-04 11:14:47 -0400
+
+ActionController::RoutingError (uninitialized constant PaesController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 11:15:08 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2011-11-04 11:15:10 -0400
+
+ActionController::RoutingError (uninitialized constant PaesController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2011-11-04 11:16:06 -0400
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/help.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-11-04 11:16:10 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/about.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 266ms (Views: 265.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2011-11-04 11:16:12 -0400
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (15.6ms)
+Rendered pages/contact.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 281ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 11:36:59 -0400
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 266ms (Views: 187.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-04 11:37:30 -0400
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bt/NUoxsWORThnxSfn1/wouYTq3xFn85Ims4a7jMozk=", "user"=>{"name"=>"ritika", "email"=>"r3majumdar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 781ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sirnup" for 127.0.0.1 at 2011-11-04 15:40:50 -0400
+
+ActionController::RoutingError (No route matches "/sirnup"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 15:41:06 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (265.6ms)
+Rendered users/new.html.erb within layouts/application (296.9ms)
+Completed   in 516ms
+
+ActionView::Template::Error (undefined method `error' for #<User:0x196ab08>):
+    1: <% if @user.error.any?%>
+    2: 	 <div id ="error_explanation">
+    3: 	 	<h2><%= pluralize(@user.errors.count,"error")%>
+    4: 	 		prohibited this user from being saved:</h2>
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb___313514125_12853656_828649068'
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb__1029554966_13157508_480703116'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1029554966_13157508_480703116'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (31.2ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (109.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 15:42:15 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 250ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-04 15:42:20 -0400
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bt/NUoxsWORThnxSfn1/wouYTq3xFn85Ims4a7jMozk=", "user"=>{"name"=>"", "email"=>"r3majumdar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1
+Rendered shared/_error_messages.html.erb (15.6ms)
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 344ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-04 15:48:43 -0400
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bt/NUoxsWORThnxSfn1/wouYTq3xFn85Ims4a7jMozk=", "user"=>{"name"=>"", "email"=>"r3majumdar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 297ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 15:48:51 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 281ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 15:48:59 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 312ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 15:49:44 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (234.4ms)
+Completed 200 OK in 391ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-04 15:56:14 -0400
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzqz/T/BOsU5QyEtX/vANttyecvRaNPsjvIq6M8HgGM=", "user"=>{"name"=>"ritika bose", "email"=>"r3majumdar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1
+  [1m[36mAREL (31.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('ritika bose', 'r3majumdar@yahoo.com', '2011-11-04 19:56:15.500000', '2011-11-04 19:56:15.500000', '151bcee7ce5263035e5f9b0d7f123309e68107e082632e95de5f7f87952f01de', 'ca0961be4f009b08586f511a882b6768e80112ce0dd0f4f979df371711a291d2')[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 609ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-11-04 15:56:15 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/show.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 281ms (Views: 187.5ms | ActiveRecord: 31.2ms)
