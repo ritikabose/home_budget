@@ -2248,3 +2248,70 @@ Rendered layouts/_header.html.erb (0.0ms)
 Rendered layouts/_footer.html.erb (0.0ms)
 Rendered users/show.html.erb within layouts/application (78.1ms)
 Completed 200 OK in 281ms (Views: 187.5ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 16:05:12 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 16:10:08 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 16:10:37 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (15.6ms)
+Rendered pages/home.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 172ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 16:11:01 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 313ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-04 16:11:14 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 250ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-04 16:12:01 -0400
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzqz/T/BOsU5QyEtX/vANttyecvRaNPsjvIq6M8HgGM=", "user"=>{"name"=>"ritika bose", "email"=>"r3majumdar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('r3majumdar@yahoo.com')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('ritika bose', 'r3majumdar@yahoo.com', '2011-11-04 20:12:01.494520', '2011-11-04 20:12:01.494520', '6d3faded0114e6a5a0ac20578f1cffa68dfbb99e824c51593a26e6c1ee3b0924', '06c8b18fad9fef85466d9391afbc60e54b0ffb0758b160fb1eaef088478910a9')
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 172ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2011-11-04 16:12:01 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/show.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 234ms (Views: 156.3ms | ActiveRecord: 0.0ms)
