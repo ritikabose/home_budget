@@ -150,3 +150,8 @@ footer nav{
   font-size: 12px;
   list-style: square;
 }
+
+div.field, div.action{
+	margin-bottom: 10 px;
+	
+}
